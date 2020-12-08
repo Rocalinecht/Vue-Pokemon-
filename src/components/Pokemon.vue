@@ -7,6 +7,9 @@
                 <input type="submit" value="Submit">
             </form>
         </div>
+        <div>
+            <h2>{{ pokemon.name}}</h2>
+        </div>
     </div>
 </template>
 
@@ -35,8 +38,9 @@ export default {
            .then(data => {
                this.pokemon = data
                this.loading = false
+               console.log(data)
            })
-           .catch(error => console.log(error))
+        //    .catch(error => console.log(error))
       }
   }
 }
