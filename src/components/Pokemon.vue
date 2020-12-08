@@ -2,8 +2,8 @@
     <div>
         <h1>{{ title }}</h1>
         <div>
-            <form @submit.prevent="getPokemon()">
-                <input v-model="pokemonId" placeholder="chose ID ">
+            <form @submit.prevent="searchPokemon()">
+                <input v-model="pokemonID" placeholder="chose ID ">
                 <input type="submit" value="Submit">
             </form>
         </div>
@@ -20,8 +20,23 @@ export default {
       return{
           pokemon:null,
           pokemonID:'',
-          error:false,
+          errored:false,
           loading: true
+      }
+  },
+  created(){
+      this.searchPokemon()
+  },
+  methods:{
+
+      searchPokemon(){
+          fetch(`https://pokeapi.co/api/v2/pokemon/${this.pokemonID}`)
+           .then(res => res.json())
+           .then(data => {
+               this.pokemon = data
+               this.loading = false
+           })
+           .catch(error => console.log(error))
       }
   }
 }
