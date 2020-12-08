@@ -1,7 +1,7 @@
 <template>
   <div id="app">
 
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld />
     <Pokemon title="My Pokemon App"
               v-bind:pokemon="pokemon"
               v-bind:loading="loading"
