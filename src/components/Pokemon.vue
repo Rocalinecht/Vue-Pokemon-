@@ -100,7 +100,7 @@ export default {
     background: #ffffff;
     background-color: #ffffff;
 }
-
+/* Title and Form  */
 h1{
     font-size: 4.3em;
     padding: 6%;
@@ -108,9 +108,9 @@ h1{
     text-align: start;
 }
 .name{
-      width: 70%;
-      display: flex;
-      position: relative;
+    width: 70%;
+    display: flex;
+    position: relative;
 }
 .name-title{
     position: absolute;
@@ -118,9 +118,9 @@ h1{
     left:40%;
     text-align:start;  
 }
-
+/* DATA  */
 h2{
-  font-size: 3.5em;
+    font-size: 3.5em;
 }
 span{
     font-size: 2em;
@@ -144,23 +144,23 @@ img{
     height: 350px; 
 }
 .details{
-    
     height: 200px;
     display: flex;
     flex-direction: column;
 }
+
 .data{
     font-size: 15px;
     padding-left:35px;
 }
 
 .form{
-      /* border:2px solid green; */
-      height: 30%;
-      display: flex;
-      padding: 6%;
-      text-align: start;   
+    height: 30%;
+    display: flex;
+    padding: 6%;
+    text-align: start;   
 }
+
 input{
     border-radius: 30px;
     background: #e6e6e6;
@@ -169,30 +169,31 @@ input{
     width: 300px;
     text-align: start;
     padding-right: 2%; 
-  
 }
-.pokeid {
-  padding-left: 30px;
-  border-radius: 15px;
-  font-style: italic;
 
+.pokeid {
+    padding-left: 30px;
+    border-radius: 15px;
+    font-style: italic;
 }
+
 button {
-  outline: none;
-  border:none;
-  cursor: pointer;
-  width:40%;
-  height: 45px;
-  margin-top: 5%;
-  border-radius: 30px;
-  font-size: 20px;
-  font-weight: 700;
-  color:#fff;
-  text-align: center;
-  background: #9FA5D5;
-  box-shadow: 3px 3px 8px #b1b1b1,
-              -3px -3px 8px #ffffff;
+    outline: none;
+    border:none;
+    cursor: pointer;
+    width:40%;
+    height: 45px;
+    margin-top: 5%;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color:#fff;
+    text-align: center;
+    background: #9FA5D5;
+    box-shadow: 3px 3px 8px #b1b1b1,
+                -3px -3px 8px #ffffff;
 }
+
 @media screen and (min-width: 200px) and (max-width: 375px) {
   .box {
     flex-direction: column;
