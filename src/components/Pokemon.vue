@@ -26,8 +26,8 @@
                         <span v-if="show" class="data">
                           <li> Id : # {{  pokemon.id}} </li> 
                           <li> Type : {{pokeType1}} </li>  
-                           <li> Weight : {{  pokemon.weight}}g </li> 
-                            <li> Height :{{ pokemon.height}}cm </li> 
+                          <li> Weight : {{  pokemon.weight}} hg </li> 
+                          <li> Height :{{ pokemon.height}} dm </li> 
                              
                         </span>
                     </transition>
