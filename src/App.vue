@@ -110,8 +110,9 @@ a:hover{
 /* MEDIA QUERIES  */
 @media screen and (min-width: 200px) and (max-width: 640px) {
   #app{
-    height: 600px;
+    height: 750px;
     width: 80%;
+    justify-content: center;
   }
   .nav span{
     margin: 5% ;

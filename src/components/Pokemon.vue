@@ -147,7 +147,7 @@ img{
     height: 350px; 
 }
 .details{
-    height: 200px;
+    
     display: flex;
     flex-direction: column;
 }
@@ -203,6 +203,7 @@ button {
     height: 550px;
     width: 250px;
     border-radius: 20px;
+    margin-left: 25%;
   }
   .img{
       width: 300px;
@@ -232,5 +233,9 @@ button {
   span{
       font-size: 1em;
   }
+  .details{
+    width: 200px;
+   
+}
 }
 </style>
