@@ -3,8 +3,8 @@
         <div class="content">
             <h1>{{ title }}</h1>
             <div class="form">
-                <form @submit.prevent="searchPokemon()">
-                    <input v-model="pokemonID" placeholder="Write  ID Pokemon" class="pokeid">
+                <form @submit.prevent="searchPokemon() ">
+                    <input v-model="pokemonID" placeholder=" De 1 à 800 " class="pokeid">
                     <br><button type="submit" @click="visible = !visible" value="Submit">GO !</button>
                 </form>
             </div>
@@ -59,6 +59,8 @@ export default {
   mounted(){
       this.searchPokemon()   
       this.show   
+      this.visible
+      
   },
   methods:{
 
@@ -70,6 +72,7 @@ export default {
                this.loading = false
                this.sprit =  `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${this.pokemonID}.png`
                this.pokeType1 =  data.types[0].type.name;
+               this.visible = true
                
 
                console.log(data)
