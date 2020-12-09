@@ -118,7 +118,7 @@ h1{
 .name-title{
     position: absolute;
     top:55%;
-    left:40%;
+    left:25%;
     text-align:start;  
 }
 /* DATA  */
