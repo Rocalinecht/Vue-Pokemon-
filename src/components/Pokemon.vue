@@ -4,7 +4,7 @@
             <h1>{{ title }}</h1>
             <div class="form">
                 <form @submit.prevent="searchPokemon() ">
-                    <input v-model="pokemonID" placeholder=" De 1 à 800 " class="pokeid">
+                    <input v-model="pokemonID" placeholder=" Exemple : 25" class="pokeid">
                     <br><button type="submit" @click="visible = !visible" value="Submit">GO !</button>
                 </form>
             </div>
